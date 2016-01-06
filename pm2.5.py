@@ -1,11 +1,8 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import sys
-import urllib
 import urllib2
-import json
-import HTMLParser
 from sgmllib import SGMLParser
-
+import sys
 
 def pm25(city):
     '''
@@ -51,5 +48,6 @@ class MySGMLParser(SGMLParser):
 
 
 if __name__ == '__main__':
-    pm = pm25('beijing')
+    name = sys.argv[1]
+    pm = pm25(name)
     print pm
