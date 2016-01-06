@@ -10,6 +10,8 @@ pm2.5 zabbix 监控
 
 github: https://github.com/xxiu/pm2.5_zabbix
 
+pm2.5没有找到很好的api，于是找了个pm2.5的网站，用解析html的方式来获取当前的pm2.5的值
+
 配置
 ---------------
 我的 zabbix 配置文件目录在 `/usr/local/etc`
